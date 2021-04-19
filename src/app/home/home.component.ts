@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  homeTitle = 'Welcome to the ninja directory';
+  ninja = {
+    name: 'Yoshi',
+    belt: 'Black'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
