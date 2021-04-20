@@ -9,11 +9,7 @@ export class AppComponent {
   title = 'ninjasAngular11';
   name = 'Ninjas';
 
-  ninja = {
-    name: 'Yoshi',
-    belt: 'Black'
-  };
-
+  /*
   sendEventHandler(message: string): void {
     alert(message);
   }
@@ -21,4 +17,5 @@ export class AppComponent {
   sendNoParamEventHandler(): void {
     alert('Greetings');
   }
+  */
 }

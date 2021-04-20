@@ -2,13 +2,16 @@
   <h1>{{title}}</h1>
   <nav>
     <ul>
-      <li>link</li>
-      <li>link</li>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/home" routerLinkActive="active">Directory</a></li>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li><a [routerLink]="['/directory']">Directory</a></li>
     </ul>
   </nav>
 </header>
 <section id="main">
-  <app-home [ninja]="ninja"
+  <!-- <app-home [ninja]="ninja"
             (sendEvent)="sendEventHandler($event)"
-            (sendNoParamEvent)="sendNoParamEventHandler()">Loading...</app-home>
+            (sendNoParamEvent)="sendNoParamEventHandler()">Loading...</app-home> -->
+  <router-outlet></router-outlet>
 </section>

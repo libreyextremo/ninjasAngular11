@@ -7,23 +7,30 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  @Input() ninja: any;
+  //@Input() ninja: any;
 
-  @Output() sendEvent: EventEmitter<string> = new EventEmitter();
-  @Output() sendNoParamEvent = new EventEmitter();
+  // @Output() sendEvent: EventEmitter<string> = new EventEmitter();
+  // @Output() sendNoParamEvent = new EventEmitter();
 
   homeTitle = 'Welcome to the ninja directory';
+
+  ninja = {
+    name: 'Yoshi',
+    belt: 'Black'
+  };
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  /*
   yell(): void {
     this.sendEvent.emit('Yahooo!');
   }
   greet(): void {
     this.sendNoParamEvent.emit();
   }
+  */
 
 }
