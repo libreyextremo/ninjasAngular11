@@ -8,5 +8,7 @@
   </nav>
 </header>
 <section id="main">
-  <app-home>hello there</app-home>
+  <app-home [ninja]="ninja"
+            (sendEvent)="sendEventHandler($event)"
+            (sendNoParamEvent)="sendNoParamEventHandler()">Loading...</app-home>
 </section>
