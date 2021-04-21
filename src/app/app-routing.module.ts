@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: '' , component: HomeComponent},
   {path: 'home' , component: HomeComponent},
   {path: 'directory' , component: DirectoryComponent},
+  {path: 'directory/:ninja' , component: DirectoryComponent},
   {path: '**' , component: HomeComponent}
   ];
 
