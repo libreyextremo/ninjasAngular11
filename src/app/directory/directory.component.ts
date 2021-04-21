@@ -9,6 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 export class DirectoryComponent implements OnInit {
   ninja: any = '';
 
+  classes = {blue: true, red: false, underline: true};
+  test = true;
+  userName = 'Andy';
+
   constructor(private activatedroute: ActivatedRoute) {
     this.ninja = activatedroute.snapshot.paramMap.get('ninja');
   }

@@ -1,0 +1,12 @@
+<h2> Ninja Listing - day {{day | date: 'shortDate'}}</h2>
+
+<ul id="ninja-listing">
+  <li *ngFor="let ninjawarrior of ninjawarriorlist">
+    <div class="single-ninja">
+      <!-- Belt Colour -->
+      <span [ngStyle]="{background: ninjawarrior.belt}">{{ ninjawarrior.belt }} belt</span>
+      <!-- Ninja name -->
+      <h3>{{ ninjawarrior.name }}</h3>
+    </div>
+  </li>
+</ul>

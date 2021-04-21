@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
+import { NinjalistComponent } from './ninjalist/ninjalist.component';
 
 const routes: Routes = [
   {path: '' , component: HomeComponent},
   {path: 'home' , component: HomeComponent},
   {path: 'directory' , component: DirectoryComponent},
   {path: 'directory/:ninja' , component: DirectoryComponent},
+  {path: 'ninjalist' , component: NinjalistComponent},
   {path: '**' , component: HomeComponent}
   ];
 
