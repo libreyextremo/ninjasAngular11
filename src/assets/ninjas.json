@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Mario",
+    "belt": "yellow"
+  },
+  {
+    "name": "Peach",
+    "belt": "orange"
+  },
+  {
+    "name": "Bowser",
+    "belt": "red"
+  },
+  {
+    "name": "Yoshi",
+    "belt": "green"
+  },
+  {
+    "name": "Toad",
+    "belt": "blue"
+  }
+]
