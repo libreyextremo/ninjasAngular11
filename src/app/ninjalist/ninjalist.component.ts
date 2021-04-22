@@ -12,6 +12,7 @@ export class NinjalistComponent implements OnInit {
     {name: 'Shinobi', belt: 'black'}
   ];
   day = new Date(1981, 5, 3); // months starts from 0
+  term: any;
   constructor() { }
 
   ngOnInit(): void {

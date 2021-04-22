@@ -1,7 +1,14 @@
 <h2> Ninja Listing - day {{day | date: 'shortDate'}}</h2>
 
+<form id="filter">
+  <label>Filter ninjas by name: </label>
+  <!-- si no usas [ngModelOptions]="{standalone: true}" hay que rellenar el atributo name -->
+  <!-- <input type="text" [(ngModel)]="term" [ngModelOptions]="{standalone: true}"  /> -->
+  <input type="text" [(ngModel)]="term" name="filterField"  />
+</form>
+
 <ul id="ninja-listing">
-  <li *ngFor="let ninjawarrior of ninjawarriorlist">
+  <li *ngFor="let ninjawarrior of ninjawarriorlist | filter:term">
     <div class="single-ninja">
       <!-- Belt Colour -->
       <span [ngStyle]="{background: ninjawarrior.belt}">{{ ninjawarrior.belt }} belt</span>
