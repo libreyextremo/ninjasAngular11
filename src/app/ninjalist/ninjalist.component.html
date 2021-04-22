@@ -17,3 +17,15 @@
     </div>
   </li>
 </ul>
+
+<h2>Month list</h2>
+<ul id="monthListing">
+  <li *ngFor="let imonth of value"> {{ imonth }} </li>
+</ul>
+<h2>Car information</h2>
+<p>Make: {{ object.make }}</p>
+<p>Model: {{ object.model }}</p>
+<p>License plate: {{ object.license_plate }}</p>
+
+<button (click)="logIt()">Log me</button>
+<p>{{ reply }}</p>
