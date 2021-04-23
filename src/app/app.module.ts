@@ -13,6 +13,7 @@ import { HttpserviceComponent } from './httpservice/httpservice.component';
 import { FilterPipe } from './filter.pipe';
 import { LoggingService } from './logging.service';
 import { MydataServiceService } from './mydata-service.service';
+import { LanguagesComponent } from './languages/languages.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MydataServiceService } from './mydata-service.service';
     DirectoryComponent,
     NinjalistComponent,
     FilterPipe,
-    HttpserviceComponent
+    HttpserviceComponent,
+    LanguagesComponent
   ],
   imports: [
     BrowserModule,
