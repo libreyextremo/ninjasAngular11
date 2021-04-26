@@ -62,6 +62,27 @@
                   "maximumError": "4kb"
                 }
               ]
+            },
+            "da": {
+              "aot": true,
+              "outputPath": "dist/under-c-da/",
+              "i18nFile": "src/locale/messages.da.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "da"
+            },
+            "de": {
+              "aot": true,
+              "outputPath": "dist/under-c-de/",
+              "i18nFile": "src/locale/messages.de.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "de"
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/under-c-fr/",
+              "i18nFile": "src/locale/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr"
             }
           }
         },
@@ -73,6 +94,15 @@
           "configurations": {
             "production": {
               "browserTarget": "ninjasAngular11:build:production"
+            },
+            "da": {
+              "browserTarget": "ninjasAngular11:build:da"
+            },
+            "de": {
+              "browserTarget": "ninjasAngular11:build:de"
+            },
+            "fr": {
+              "browserTarget": "ninjasAngular11:build:fr"
             }
           }
         },

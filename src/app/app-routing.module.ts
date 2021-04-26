@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { NinjalistComponent } from './ninjalist/ninjalist.component';
 import { HttpserviceComponent } from './httpservice/httpservice.component';
+import { LanguagesComponent } from './languages/languages.component';
 
 const routes: Routes = [
   {path: '' , component: HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'directory/:ninja' , component: DirectoryComponent},
   {path: 'ninjalist' , component: NinjalistComponent},
   {path: 'httpservice' , component: HttpserviceComponent},
+  {path: 'languages' , component: LanguagesComponent},
   {path: '**' , component: HomeComponent}
   ];
 

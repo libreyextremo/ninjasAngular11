@@ -4,10 +4,17 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:da": "ng serve --configuration=da",
+    "start:de": "ng serve --configuration=de",
+    "start:fr": "ng serve --configuration=fr",
     "build": "ng build",
+    "build:da": "ng build --configuration=da",
+    "build:de": "ng build --configuration=de",
+    "build:fr": "ng build --configuration=fr",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "int:extract": "ng extract-i18n --output-path src/locale"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +34,7 @@
     "@angular-devkit/build-angular": "~0.1102.8",
     "@angular/cli": "~11.2.8",
     "@angular/compiler-cli": "~11.2.9",
+    "@angular/localize": "^11.2.9",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
